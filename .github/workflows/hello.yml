@@ -1,3 +1,4 @@
+---
 name: Hello World!
 
 on:
@@ -12,3 +13,14 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+
+  print_date_and_dir:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Print date
+        run: |
+          date
+      - name: List directory
+        run: |
+          ls -l
+...
