@@ -13,14 +13,9 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
-
-  print_date_and_dir:
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Print date
+      - name: Now it is
         run: |
           date
-      - name: List directory
+      - name: Directory content
         run: |
           ls -l
-...
